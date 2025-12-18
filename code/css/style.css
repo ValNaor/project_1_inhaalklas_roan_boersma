@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "articslab";
+    src: url(../fonts/anticslab-regular.ttf);
+}
+
+@font-face {
+    font-family: "nunito";
+    src: url(../fonts/nunito/nunito-medium.ttf);
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(../fonts/broodtekst/Poppins-Light.ttf);
+}
+
+p{
+    font-family: "poppins";
+    font-size: 1em;
+    padding: 3em;
+    color: #262626;
+}
+
+img{
+    width: 100dvw;
+}
+
+#logonavbar{
+
+    display: flex;
+    align-self: flex-end;
+    background-color: white;
+    width: 46px;
+    height: 46px;
+    overflow: hidden;
+    padding: 1em;
+
+}
+
+header{
+
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+    position: fixed;
+    align-content: center;
+    background-color: white;
+    z-index: 100;
+}
+
+nav{
+
+    position: absolute;
+    text-align: left;
+    top: 99%;
+    background-image: linear-gradient(white, #9e9e9e 1000% );
+    width: 100dvw;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.5s ease-in-out;
+}
+
+nav ul{
+
+    list-style: none;
+    
+}
+
+nav li{
+
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+
+}
+
+nav a{
+
+    text-decoration: none;
+    font-family: "nunito";
+    text-transform: uppercase;
+    color: #262626;
+    transition: 0.5s;
+    opacity: 0;
+    transition: opacity 50ms ease-in-out;
+    
+}
+
+#nav-bar-logo{
+
+    display: flex;
+    align-items: flex-end;
+}
+
+nav a:hover{
+
+    color: #c49a6c;
+    transition: 0.3s;
+}
+
+#nav-toggle:checked ~ nav{
+
+    transform: scale(1,1);
+
+}
+
+#nav-toggle{
+
+    display: none;
+    transform: scale(1,1);
+}
+
+#nav-toggle-label{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+#nav-toggle-label span, #nav-toggle-label span::before, #nav-toggle-label span::after {
+
+    display: block;
+    background-color: #262626;
+    width: 2em;
+    height: 2px;
+    border-radius: 2px;
+    position: relative;
+}
+
+#nav-toggle-label span::before, #nav-toggle-label span::after{
+
+    content: "";
+    position: absolute;
+
+}
+
+#nav-toggle-label span::before{
+
+    bottom: 7px;
+}
+
+#nav-toggle-label span::after{
+
+    top: 7px;
+}
+
+#nav-toggle:checked ~ nav a{
+
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 200ms;
+}
+
+h1{
+
+    font-family: "nunito";
+    font-size: 2em;
+    color: #262626;   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    height: 100dvh;
+    width: 100dvw;
+
+}
+
+h2{
+    font-family: "nunito";
+    font-size: 1.2em;
+    color: #262626;    
+}
+
+
+#landingpage a:nth-child(1){
+
+    background-image: url(../../images/landingpage_homepage_3.JPG);
+
+}
+
+#landingpage a:nth-child(2){
+
+    background-image: url(../../images/landingpage_doelen.jpg);
+}
+
+#landingpage a:nth-child(3){
+
+    background-image: url(../../images/samenwerking.jpg);
+}
+
+#landingpage a{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 100%;
+    min-height: 33.33dvh;
+    font-family: "nunito";
+    color: white;
+    font-size: 250%;
+    text-decoration: none;
+    text-shadow: 2em 2em 3em black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#homepage blockquote{
+
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #467060;
+    padding: 0.5em;
+    color: white;
+    font-family: "articslab";
+
+}
+
+#homepage section:not(:first-child){
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+
+}
+
+#homepage section h2{
+
+    align-self: center;
+    padding: 1em;
+
+}
+
+#homepage section img{
+
+    max-width: 50%; 
+    height: 70%;
+    
+}
+
+#homepage section p{
+
+    align-self: flex-end;
+    max-width: 40%;
+    padding-top: 0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    
+}
+
+#homepage section p:nth-child(4){
+
+    max-width: 100%;
+}
+
+#homepage div{
+
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2em;
+    gap: 2em;
+}
+
+#homepage div a{
+
+    top: 25dvh;
+    position: sticky;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #c49a6c;
+    text-decoration: none;
+    color: white;
+    font-family: "nunito";
+    font-size: 1.3em;
+    border-radius: 35px;
+    z-index: 1;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#homepage div image{
+
+    min-width: 100dvw;
+    position: fixed;
+    gap: 1em;
+    background-color: black;
+
+}
+
+
+#materialen section h1{
+
+    max-width: 70%;
+    color: #f2f2f2;
+}
+
+#materialen div {
+
+    min-height: 10em;
+}
+
+#materialen div img{
+
+    width: 20%;
+}
+
+footer{
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #467060;
+    height: 11em;
+}
+
+#samenwerkingfooter{
+
+    position: absolute;
+    bottom: -96em;
+}
+
+footer a{
+
+    font-family: "poppins";
+    font-size: 1em;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 4em;
+    padding-right: 2em;
+    color: white;
+}
+
+
+#doelen p:nth-child(2){
+
+    background-color: #f2f2f2;
+}
+
+#doelen section:nth-child(4){
+
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#doelen h3{
+
+    align-self: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    color: #467060;
+    font-family: "nunito";
+
+}
+
+#doelen p:not(nth-child(1)){
+
+    background-color: transparent;
+}
+
+#doelen a{
+
+    color: #467060;
+    text-decoration: none;
+}
+
+#doelen section:nth-child(5){
+
+    display: flex ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#doelen section img{
+
+    max-width: 50dvw;
+    position: relative;
+    transition: 1s;
+}
+
+#doelen section img:active{
+
+    max-width: 70dvw;
+    position: relative;
+    transition: 1s;
+    z-index: 1;
+}
+
+#doelen section h2:nth-child(1){
+   
+    padding-top: 3em;
+    left: 1.8em;
+    color: white;
+    text-shadow: 0.5em 0.5em 1em #262626;
+    position: absolute;
+    width: 8em;
+    z-index: 1;
+
+}
+
+#doelen section h2:nth-child(3){
+
+    padding-top: 3em;
+    color: white;
+    text-shadow: 0.5em 0.5em 1em #262626;
+    position: absolute;
+    width: 8em;
+    left: 11.5em;
+    z-index: 1;
+    align-self: right;
+
+}
+
+#samenwerking main{
+
+    min-height: 100dvw;
+}
+
+#samenwerking section{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+    height: 5em;
+    flex-grow: 1;
+}
+
+#samenwerking h2{
+
+    display: flex;
+    justify-content: center;
+    width: 100dvw;
+    color: white;
+    text-shadow: 0.5em 0.5em 1em #262626;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #c49a6c;
+    
+
+}
+
+#samenwerking section img:first-of-type{
+
+    padding-top: 3em;
+    max-width: 80dvw;
+    position: sticky;
+    padding-bottom: 4em;
+    bottom: 20rem;
+    z-index: -1;
+
+}
+
+#samenwerking section{
+    background-color: #467060;
+}
+
+#samenwerking p{
+
+    background-color: white;
+}
+
+#samenwerking section img{
+
+    display: flex;
+    position:static;
+    z-index: -2;
+
+}
+
+#materialen section{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+#materialen section h2{
+
+    color: #467060;
+    padding-top: 3em;
+    font-size: 1.5em;
+}
+
+#scroll-watcher{
+
+    height: 8px;
+    position: fixed;
+    top: 0 ;
+    z-index: 1000;
+    background-color: #c49a6c;
+    width: 100dvw;
+    scale: 0 1;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll(y);
+    transform-origin: left;
+}
+
+@keyframes scroll-watcher{
+    to {scale: 1 1; }
+}
