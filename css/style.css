@@ -183,18 +183,18 @@ h2{
 
 #landingpage a:nth-child(1){
 
-    background-image: url(../../images/landingpage_homepage_3.JPG);
+    background-image: url(images/landingpage_homepage_3.JPG);
 
 }
 
 #landingpage a:nth-child(2){
 
-    background-image: url(../../images/landingpage_doelen.jpg);
+    background-image: url(images/landingpage_doelen.jpg);
 }
 
 #landingpage a:nth-child(3){
 
-    background-image: url(../../images/samenwerking.jpg);
+    background-image: url(images/samenwerking.jpg);
 }
 
 #landingpage a{
